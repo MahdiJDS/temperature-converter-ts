@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+    background-image: linear-gradient(#ccc , #ba1010);
+    height: 100vh;
+}
+
+.card{
+    width:40rem;
+    height: 60%;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 100px 20px #555;
+    border-radius:15px ;
+    padding: 20px; 
+    gap: 50px;
+}
+
+.card .input-group{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.card .input-group span{
+    text-align: center;
+    color:rgb(163, 96, 15);
+    font-weight: 700;
+    font-size: 18.5px;
+}
+
+.card .input-group input{
+    text-align: center;
+    border: 0px;
+    outline: 0;
+    border-radius:12px ;
+    padding: 5px;
+    background-color: transparent;
+    transition: all 1s ease-in-out;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    margin: 0;
+    -webkit-appearance: none;
+}
+
+.switch button{
+ padding: 6px;
+ margin-left: 30px;
+ border: 0;
+ border-radius: 0px 10px 10px 0px;
+ background-color: transparent;
+cursor: pointer;
+color: #ccc;
+transition: all 0.6s ease-in-out;
+}
+
+.switch button:hover{
+    transform: translateY(-5px);
+    opacity: 0.6;
+}
